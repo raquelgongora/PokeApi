@@ -7,15 +7,15 @@ public class PokemonDetails {
     private int baseExperience;
     private int weight;
     private String[] type;
-    private String url;
+    private String image;
 
-    public PokemonDetails(String name, int id, int baseExperience, int weight, String[] type, String url) {
+    public PokemonDetails(String name, int id, int baseExperience, int weight, String[] type) {
         this.name = name;
-        this.url = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + id + ".png";
         this.id = id;
         this.baseExperience = baseExperience;
         this.weight = weight;
         this.type = type;
+        this.image = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + id + ".png";
     }
 
     public String getName() {
@@ -26,7 +26,7 @@ public class PokemonDetails {
         return id;
     }
 
-    public int getBaseexperience() {
+    public int getBaseExperience() {
         return baseExperience;
     }
 
@@ -38,24 +38,7 @@ public class PokemonDetails {
         return type;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getImage() {
+        return image;
     }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setBaseexperience(int baseexperience) {
-        this.baseExperience = baseexperience;
-    }
-
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
-    public void setType(String[] type) {
-        this.type = type;
-    }
-
 }

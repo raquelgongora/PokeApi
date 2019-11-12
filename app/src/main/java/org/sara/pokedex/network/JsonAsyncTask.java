@@ -7,6 +7,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.sara.pokedex.entities.Pokemon;
+import org.sara.pokedex.interfaces.AsyncTaskHandler;
 
 import java.io.IOException;
 import java.net.URL;
@@ -18,11 +19,7 @@ import static org.sara.pokedex.network.NetworkUtils.makeHttpRequest;
 
  public class JsonAsyncTask extends AsyncTask<Void, Void, List<Pokemon>> {
 
-    public interface JsonAsyncHandler {
-        void onPokemonsDownloaded(List<Pokemon> pokemons);
-    }
-
-    public JsonAsyncHandler handler;
+    public AsyncTaskHandler handler;
 
     protected void onPreExecute() {
         super.onPreExecute();
@@ -47,7 +44,7 @@ import static org.sara.pokedex.network.NetworkUtils.makeHttpRequest;
     protected void onPostExecute(List<Pokemon> pokemonList) {
         super.onPostExecute(pokemonList);
         if (handler != null) {
-            handler.onPokemonsDownloaded(pokemonList);
+            handler.onTaskEnd(pokemonList);
         }
     }
 
