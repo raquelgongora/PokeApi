@@ -1,9 +1,20 @@
 package org.sara.pokedex.entities;
 
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class Pokemon {
+    @PrimaryKey()
+    @NonNull
     private String id;
+    @ColumnInfo(name = "name")
     private String name;
+    @ColumnInfo(name = "url")
     private String url;
+    @ColumnInfo(name = "image")
     private String image;
 
     public Pokemon(String name, String url) {
@@ -30,5 +41,21 @@ public class Pokemon {
 
     public String getImage() {
         return image;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

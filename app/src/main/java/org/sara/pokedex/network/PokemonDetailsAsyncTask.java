@@ -14,8 +14,6 @@ import org.sara.pokedex.interfaces.AsyncTaskHandler;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.sara.pokedex.network.NetworkUtils.createUrl;
 import static org.sara.pokedex.network.NetworkUtils.makeHttpRequest;

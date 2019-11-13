@@ -6,15 +6,15 @@ public class PokemonDetails {
     private int id;
     private int baseExperience;
     private int weight;
-    private String[] type;
+    private String[] types;
     private String image;
 
-    public PokemonDetails(String name, int id, int baseExperience, int weight, String[] type) {
+    public PokemonDetails(String name, int id, int baseExperience, int weight, String[] types) {
         this.name = name;
         this.id = id;
         this.baseExperience = baseExperience;
         this.weight = weight;
-        this.type = type;
+        this.types = types;
         this.image = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + id + ".png";
     }
 
@@ -34,8 +34,8 @@ public class PokemonDetails {
         return weight;
     }
 
-    public String[] getType() {
-        return type;
+    public String[] getTypes() {
+        return types;
     }
 
     public String getImage() {

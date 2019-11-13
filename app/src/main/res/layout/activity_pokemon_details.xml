@@ -20,7 +20,8 @@
     <TextView
         android:id="@+id/detatils_type"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:onClick="onClickType"/>
     <TextView
         android:id="@+id/detatils_weight"
         android:layout_width="wrap_content"
@@ -37,5 +38,6 @@
         android:id="@+id/details_favorite"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:src="@drawable/favorite"/>
+        android:src="@drawable/favorite_empty"
+        android:onClick="onClickFavorite"/>
 </LinearLayout>
