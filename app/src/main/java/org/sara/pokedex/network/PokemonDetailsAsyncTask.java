@@ -8,7 +8,6 @@ import android.util.Log;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.sara.pokedex.entities.Pokemon;
 import org.sara.pokedex.entities.PokemonDetails;
 import org.sara.pokedex.interfaces.AsyncTaskHandler;
 

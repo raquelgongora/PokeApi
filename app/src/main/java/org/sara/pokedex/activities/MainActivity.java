@@ -16,7 +16,7 @@ import org.sara.pokedex.R;
 import org.sara.pokedex.adapters.PokemonAdapter;
 import org.sara.pokedex.entities.Pokemon;
 import org.sara.pokedex.interfaces.AsyncTaskHandler;
-import org.sara.pokedex.network.JsonAsyncTask;
+import org.sara.pokedex.network.PokemonAsyncTask;
 
 import java.util.List;
 
@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity implements AsyncTaskHandler,
         progressBar = findViewById(R.id.progress_bar);
 
         progressBar.setVisibility(View.VISIBLE);
-        JsonAsyncTask jsonAsyncTask = new JsonAsyncTask();
-        jsonAsyncTask.handler = this;
-        jsonAsyncTask.execute();
+        PokemonAsyncTask pokemonAsyncTask = new PokemonAsyncTask();
+        pokemonAsyncTask.handler = this;
+        pokemonAsyncTask.execute();
 
     }
 

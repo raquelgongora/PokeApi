@@ -13,6 +13,7 @@ import org.sara.pokedex.adapters.PokemonAdapter;
 import org.sara.pokedex.database.AppDatabase;
 import org.sara.pokedex.entities.Pokemon;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FavoritesActivity extends AppCompatActivity implements PokemonAdapter.ItemClickListener {
@@ -22,8 +23,6 @@ public class FavoritesActivity extends AppCompatActivity implements PokemonAdapt
     AppDatabase database;
 
     List<Pokemon> favoritePokemons;
-    Pokemon selectedPokemon;
-    int selectedPosition;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,20 +43,15 @@ public class FavoritesActivity extends AppCompatActivity implements PokemonAdapt
     @Override
     protected void onResume() {
         super.onResume();
-
-        if(selectedPokemon != null) {
-            boolean pokemonWasRemoved = database.pokemonDao().findByName(selectedPokemon.getName()) == null;
-            if(pokemonWasRemoved) {
-                favoritePokemons.remove(selectedPokemon);
-                adapter.notifyItemRemoved(selectedPosition);
-            }
-        }
+        favoritePokemons.clear();
+        favoritePokemons.addAll(database.pokemonDao().getAll());
+        adapter.notifyDataSetChanged();
     }
 
     @Override
     public void onItemClick(View view, int position) {
-        selectedPokemon = adapter.getPokemon(position);
-        selectedPosition = position;
+        Pokemon selectedPokemon = adapter.getPokemon(position);
+
         Intent intent = new Intent(this, PokemonDetailsActivity.class);
         intent.putExtra("URL", selectedPokemon.getUrl());
         startActivity(intent);

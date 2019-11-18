@@ -24,7 +24,15 @@ public class Pokemon {
         this.id = url.replace("https://pokeapi.co/api/v2/pokemon/", "")
                 .replace("/", "");
 
-        this.image = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + id + ".png";
+        String assetId = id;
+
+        if(id.length() == 1) {
+            assetId = "00" + id;
+        } else if (id.length() == 2) {
+            assetId = "0" + id;
+        }
+
+        this.image = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + assetId + ".png";
     }
 
     public String getId() {

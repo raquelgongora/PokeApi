@@ -15,7 +15,16 @@ public class PokemonDetails {
         this.baseExperience = baseExperience;
         this.weight = weight;
         this.types = types;
-        this.image = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + id + ".png";
+
+        String assetId = String.valueOf(id);
+
+        if(assetId.length() == 1) {
+            assetId = "00" + id;
+        } else if (assetId.length() == 2) {
+            assetId = "0" + id;
+        }
+
+        this.image = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/" + assetId + ".png";
     }
 
     public String getName() {

@@ -2,6 +2,8 @@ package org.sara.pokedex.activities;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -14,16 +16,20 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import org.sara.pokedex.R;
+import org.sara.pokedex.adapters.RowTypesAdapter;
 import org.sara.pokedex.database.AppDatabase;
 import org.sara.pokedex.entities.Pokemon;
 import org.sara.pokedex.entities.PokemonDetails;
 import org.sara.pokedex.interfaces.AsyncTaskHandler;
 import org.sara.pokedex.network.PokemonDetailsAsyncTask;
 
+import java.util.Arrays;
+
 public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTaskHandler {
 
     ImageView image, favorite;
     TextView name, types, weight, experience, id;
+    RecyclerView rvDetailsTypes;
 
     AppDatabase database;
 
@@ -44,6 +50,7 @@ public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTa
         weight = findViewById(R.id.detatils_weight);
         experience = findViewById(R.id.detatils_experience);
         id = findViewById(R.id.detatils_id);
+        rvDetailsTypes = findViewById(R.id.rv_details_types);
 
         url = getIntent().getStringExtra("URL");
 
@@ -63,14 +70,10 @@ public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTa
         weight.setText("Peso: " + details.getWeight());
         experience.setText("Experiencia: "  + details.getBaseExperience());
         id.setText("ID: " + details.getId());
+        types.setText("Tipo: ");
 
-        String typesString = "";
-
-        for (int i = 0; i < details.getTypes().length; i++) {
-            typesString += details.getTypes()[i] + " ";
-        }
-
-        types.setText("Tipo: " + typesString);
+        rvDetailsTypes.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        rvDetailsTypes.setAdapter(new RowTypesAdapter(this, Arrays.asList(details.getTypes())));
 
         favoritePokemon = database.pokemonDao().findByName(details.getName());
 

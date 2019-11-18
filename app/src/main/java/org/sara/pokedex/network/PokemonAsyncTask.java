@@ -17,7 +17,7 @@ import java.util.List;
 import static org.sara.pokedex.network.NetworkUtils.createUrl;
 import static org.sara.pokedex.network.NetworkUtils.makeHttpRequest;
 
- public class JsonAsyncTask extends AsyncTask<Void, Void, List<Pokemon>> {
+ public class PokemonAsyncTask extends AsyncTask<Void, Void, List<Pokemon>> {
 
     public AsyncTaskHandler handler;
 
