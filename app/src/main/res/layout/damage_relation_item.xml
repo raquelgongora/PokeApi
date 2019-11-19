@@ -6,7 +6,8 @@
     <ImageView
         android:id="@+id/damage_from"
         android:layout_width="30dp"
-        android:layout_height="30dp"/>
+        android:layout_height="30dp" />
+
     <TextView
         android:id="@+id/relation"
         android:layout_weight="1"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.sara.pokedex">
+    package="org.raquel.pokedex">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,17 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.SplashActivity">
+        <activity android:name="org.raquel.pokedex.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.PokemonTypeActivity" />
-        <activity android:name=".activities.FavoritesActivity" />
+        <activity android:name="org.raquel.pokedex.activities.PokemonTypeActivity" />
+        <activity android:name="org.raquel.pokedex.activities.FavoritesActivity" />
         <activity android:name=".activities.PokemonTypes" />
-        <activity android:name=".activities.PokemonDetailsActivity" />
-        <activity android:name=".activities.MainActivity"/>
+        <activity android:name="org.raquel.pokedex.activities.PokemonDetailsActivity" />
+        <activity android:name="org.raquel.pokedex.activities.MainActivity"/>
     </application>
 
 </manifest>

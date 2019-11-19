@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "org.sara.pokedex"
+        applicationId "org.raquel.pokedex"
         minSdkVersion 22
         targetSdkVersion 29
         versionCode 1
