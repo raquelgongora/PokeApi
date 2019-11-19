@@ -25,6 +25,8 @@ import org.raquel.pokedex.network.PokemonDetailsAsyncTask;
 
 import java.util.Arrays;
 
+import static org.raquel.pokedex.utils.Utils.getTypeImageResource;
+
 public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTaskHandler {
 
     ImageView image, favorite;
@@ -42,6 +44,8 @@ public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pokemon_details);
+
+
 
         image = findViewById(R.id.details_image);
         favorite = findViewById(R.id.details_favorite);
@@ -66,6 +70,8 @@ public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTa
     public void onTaskEnd(Object result) {
         PokemonDetails details = (PokemonDetails) result;
         pokemonName = details.getName();
+
+
         Glide.with(this).load(details.getImage()).into(image);
         name.setText(details.getName());
         weight.setText("Peso: " + details.getWeight());

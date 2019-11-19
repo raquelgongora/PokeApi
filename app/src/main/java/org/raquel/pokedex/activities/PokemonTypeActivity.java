@@ -19,9 +19,11 @@ import org.raquel.pokedex.entities.PokemonType;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
 import org.raquel.pokedex.network.PokemonTypeAsyncTask;
 
+import static org.raquel.pokedex.utils.Utils.getTypeImageResource;
+
 public class PokemonTypeActivity extends AppCompatActivity implements AsyncTaskHandler, PokemonAdapter.ItemClickListener {
 
-    ImageView cover;
+    ImageView cover, typeImage;
     TextView name;
     RecyclerView damageRelations;
     RecyclerView pokemons;
@@ -31,6 +33,8 @@ public class PokemonTypeActivity extends AppCompatActivity implements AsyncTaskH
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pokemon_type);
+
+        typeImage = findViewById(R.id.typeImage);
 
         cover = findViewById(R.id.type_cover);
         name = findViewById(R.id.type_name);
@@ -52,6 +56,7 @@ public class PokemonTypeActivity extends AppCompatActivity implements AsyncTaskH
 
 
         name.setText(pokemonType.getName());
+        typeImage.setImageResource(getTypeImageResource(pokemonType.getName()));
 
         damageRelations.setLayoutManager(new LinearLayoutManager(this));
         damageRelations.setAdapter(new DamageRelationAdapter(this, pokemonType));
