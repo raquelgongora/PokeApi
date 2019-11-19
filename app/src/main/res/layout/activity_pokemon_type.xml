@@ -9,16 +9,10 @@
     tools:context=".activities.PokemonTypeActivity">
 
     <ImageView
-        android:id="@+id/type_cover"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:src="@drawable/type_cover"/>
-
-    <ImageView
         android:id="@+id/typeImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="50dp"
+        android:minHeight="100dp"
         app:srcCompat="@android:color/background_light" />
 
     <TextView

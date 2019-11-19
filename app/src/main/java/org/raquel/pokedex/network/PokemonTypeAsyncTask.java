@@ -69,7 +69,7 @@ public class PokemonTypeAsyncTask extends AsyncTask<String, Void, PokemonType> {
 
             List<Pokemon> pokemons = new ArrayList<>();
             JSONArray pokemonsArray = jsonObj.getJSONArray("pokemon");
-            int iterations = pokemonsArray.length() < 6 ? pokemonsArray.length() : 6;
+            int iterations = pokemonsArray.length() < 5 ? pokemonsArray.length() : 5;
             for (int i = 0; i < iterations; i ++) {
                 JSONObject pokemonJson = pokemonsArray.getJSONObject(i).getJSONObject("pokemon");
                 String url = pokemonJson.getString("url");

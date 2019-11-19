@@ -16,39 +16,39 @@ public class Utils {
     public static int getTypeImageResource(String type) {
         switch (type) {
             case "rock":
-                return R.drawable.rock;
+                return R.drawable.rock_tag;
             case "bug":
-                return R.drawable.bug;
+                return R.drawable.bug_tag;
             case "dragon":
-                return R.drawable.dragon;
+                return R.drawable.dragon_tag;
             case "fairy":
-                return R.drawable.fairy;
+                return R.drawable.fairy_tag;
             case "fighting":
-                return R.drawable.fighting;
+                return R.drawable.fighting_tag;
             case "fire":
-                return R.drawable.fire;
+                return R.drawable.fire_tag;
             case "flying":
-                return R.drawable.flying;
+                return R.drawable.flying_tag;
             case "ghost":
-                return R.drawable.ghost;
+                return R.drawable.ghost_tag;
             case "grass":
-                return  R.drawable.grass;
+                return  R.drawable.grass_tag;
             case "ground":
-                return R.drawable.ground;
+                return R.drawable.ground_tag;
             case "ice":
-                return R.drawable.ice;
+                return R.drawable.ice_tag;
             case "normal":
-                return R.drawable.normal;
+                return R.drawable.normal_tag;
             case "poison":
-                return R.drawable.poison;
+                return R.drawable.poison_tag;
             case "psychic":
-                return R.drawable.psychic;
+                return R.drawable.psychic_tag;
             case "steel":
-                return R.drawable.steel;
+                return R.drawable.steel_tag;
             case "water":
-                return R.drawable.water;
+                return R.drawable.water_tag;
             case "dark":
-                return R.drawable.dark;
+                return R.drawable.dark_tag;
 
 
 

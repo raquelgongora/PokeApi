@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import org.raquel.pokedex.R;
 import org.raquel.pokedex.adapters.DamageRelationAdapter;
-import org.raquel.pokedex.adapters.PokemonAdapter;
+import org.raquel.pokedex.adapters.PokemonAdapter2;
 import org.raquel.pokedex.entities.Pokemon;
 import org.raquel.pokedex.entities.PokemonType;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
@@ -21,13 +21,13 @@ import org.raquel.pokedex.network.PokemonTypeAsyncTask;
 
 import static org.raquel.pokedex.utils.Utils.getTypeImageResource;
 
-public class PokemonTypeActivity extends AppCompatActivity implements AsyncTaskHandler, PokemonAdapter.ItemClickListener {
+public class PokemonTypeActivity extends AppCompatActivity implements AsyncTaskHandler, PokemonAdapter2.ItemClickListener {
 
-    ImageView cover, typeImage;
+    ImageView typeImage;
     TextView name;
     RecyclerView damageRelations;
     RecyclerView pokemons;
-    PokemonAdapter adapter;
+    PokemonAdapter2 adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,6 @@ public class PokemonTypeActivity extends AppCompatActivity implements AsyncTaskH
 
         typeImage = findViewById(R.id.typeImage);
 
-        cover = findViewById(R.id.type_cover);
         name = findViewById(R.id.type_name);
         damageRelations = findViewById(R.id.type_damage_relations);
         pokemons = findViewById(R.id.type_pokemons);
@@ -47,6 +46,8 @@ public class PokemonTypeActivity extends AppCompatActivity implements AsyncTaskH
         PokemonTypeAsyncTask pokemonTypeAsyncTask = new PokemonTypeAsyncTask();
         pokemonTypeAsyncTask.handler = this;
         pokemonTypeAsyncTask.execute(url);
+
+
     }
 
     @Override
@@ -55,16 +56,18 @@ public class PokemonTypeActivity extends AppCompatActivity implements AsyncTaskH
 
 
 
-        name.setText(pokemonType.getName());
+       //para mostrar nombre:  name.setText(pokemonType.getName());
         typeImage.setImageResource(getTypeImageResource(pokemonType.getName()));
 
         damageRelations.setLayoutManager(new LinearLayoutManager(this));
         damageRelations.setAdapter(new DamageRelationAdapter(this, pokemonType));
 
-        pokemons.setLayoutManager(new GridLayoutManager(this, 3));
-        adapter = new PokemonAdapter(this, pokemonType.getPokemons());
+        pokemons.setLayoutManager(new GridLayoutManager(this, 1));
+        adapter = new PokemonAdapter2(this, pokemonType.getPokemons());
         adapter.setClickListener(this);
         pokemons.setAdapter(adapter);
+
+
     }
 
     @Override
