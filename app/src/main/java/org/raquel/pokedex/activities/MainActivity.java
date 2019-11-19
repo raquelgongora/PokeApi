@@ -12,6 +12,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import com.github.ybq.android.spinkit.sprite.Sprite;
+import com.github.ybq.android.spinkit.style.DoubleBounce;
+
 import org.raquel.pokedex.R;
 import org.raquel.pokedex.adapters.PokemonAdapter;
 import org.raquel.pokedex.entities.Pokemon;
@@ -32,7 +35,9 @@ public class MainActivity extends AppCompatActivity implements AsyncTaskHandler,
         setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.gridview_pokemon);
-        progressBar = findViewById(R.id.progress_bar);
+        progressBar = findViewById(R.id.spin_kit);
+        Sprite doubleBounce = new DoubleBounce();
+        progressBar.setIndeterminateDrawable(doubleBounce);
 
         progressBar.setVisibility(View.VISIBLE);
         PokemonAsyncTask pokemonAsyncTask = new PokemonAsyncTask();

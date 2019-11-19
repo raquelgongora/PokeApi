@@ -33,7 +33,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/detatils_weight"
+        android:id="@+id/detailsWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

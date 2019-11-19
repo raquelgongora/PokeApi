@@ -25,8 +25,6 @@ import org.raquel.pokedex.network.PokemonDetailsAsyncTask;
 
 import java.util.Arrays;
 
-import static org.raquel.pokedex.utils.Utils.getTypeImageResource;
-
 public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTaskHandler {
 
     ImageView image, favorite;
@@ -51,7 +49,7 @@ public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTa
         favorite = findViewById(R.id.details_favorite);
         name = findViewById(R.id.detatils_name);
         types = findViewById(R.id.detatils_type);
-        weight = findViewById(R.id.detatils_weight);
+        weight = findViewById(R.id.detailsWeight);
         height = findViewById(R.id.detatils_height);
         experience = findViewById(R.id.detatils_experience);
         id = findViewById(R.id.detatils_id);

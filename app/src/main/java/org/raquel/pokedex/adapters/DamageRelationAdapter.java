@@ -44,7 +44,7 @@ public class DamageRelationAdapter extends RecyclerView.Adapter<DamageRelationAd
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        Glide.with(mContext).load(Utils.getDrawable(mContext, pokemonType.getName())).into(holder.damageFrom);
+        //Glide.with(mContext).load(Utils.getDrawable(mContext, pokemonType.getName())).into(holder.damageFrom);
         holder.relation.setText(PokemonType.relationNames[position]);
 
         List<String> relationTypes = pokemonType.getDamageRelations().get(PokemonType.relationNames[position]);
@@ -61,13 +61,13 @@ public class DamageRelationAdapter extends RecyclerView.Adapter<DamageRelationAd
     // stores and recycles views as they are scrolled off screen
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView relation;
-        ImageView damageFrom;
+        //ImageView damageFrom;
         RecyclerView rvTypes;
 
         ViewHolder(View itemView) {
             super(itemView);
             relation = itemView.findViewById(R.id.relation);
-            damageFrom = itemView.findViewById(R.id.damage_from);
+           // damageFrom = itemView.findViewById(R.id.damage_from);
             rvTypes = itemView.findViewById(R.id.rv_types);
         }
 
