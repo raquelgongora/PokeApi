@@ -6,14 +6,16 @@ public class PokemonDetails {
     private int id;
     private int baseExperience;
     private int weight;
+    private int height;
     private String[] types;
     private String image;
 
-    public PokemonDetails(String name, int id, int baseExperience, int weight, String[] types) {
+    public PokemonDetails(String name, int id, int baseExperience, int weight, int height, String[] types) {
         this.name = name;
         this.id = id;
         this.baseExperience = baseExperience;
         this.weight = weight;
+        this.height = height;
         this.types = types;
 
         String assetId = String.valueOf(id);
@@ -41,6 +43,10 @@ public class PokemonDetails {
 
     public int getWeight() {
         return weight;
+    }
+
+    public int getHeight() {
+        return height;
     }
 
     public String[] getTypes() {

@@ -54,6 +54,7 @@ public class PokemonDetailsAsyncTask extends AsyncTask<String, Void, PokemonDeta
             int baseExperience = jsonObj.getInt("base_experience");
             String name = jsonObj.getString("name");
             int weight = jsonObj.getInt("weight");
+            int height = jsonObj.getInt("height");
             int id = jsonObj.getInt("id");
 
             JSONArray jsonArray = jsonObj.getJSONArray("types");
@@ -63,7 +64,7 @@ public class PokemonDetailsAsyncTask extends AsyncTask<String, Void, PokemonDeta
                 String type = jsonArray.getJSONObject(i).getJSONObject("type").getString("name");
                 types[i] = type;
             }
-            PokemonDetails pokemonDetails = new PokemonDetails(name, id, baseExperience, weight, types);
+            PokemonDetails pokemonDetails = new PokemonDetails(name, id, baseExperience, weight, height, types);
             return pokemonDetails;
         } catch (JSONException e) {
             e.printStackTrace();

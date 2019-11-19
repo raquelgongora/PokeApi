@@ -20,6 +20,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/detatils_type"
             android:layout_width="wrap_content"
@@ -34,6 +35,12 @@
         android:id="@+id/detatils_weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/detatils_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
     <TextView
         android:id="@+id/detatils_experience"
         android:layout_width="wrap_content"

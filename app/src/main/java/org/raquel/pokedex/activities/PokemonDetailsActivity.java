@@ -28,7 +28,7 @@ import java.util.Arrays;
 public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTaskHandler {
 
     ImageView image, favorite;
-    TextView name, types, weight, experience, id;
+    TextView name, types, weight, experience, id, height;
     RecyclerView rvDetailsTypes;
 
     AppDatabase database;
@@ -48,6 +48,7 @@ public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTa
         name = findViewById(R.id.detatils_name);
         types = findViewById(R.id.detatils_type);
         weight = findViewById(R.id.detatils_weight);
+        height = findViewById(R.id.detatils_height);
         experience = findViewById(R.id.detatils_experience);
         id = findViewById(R.id.detatils_id);
         rvDetailsTypes = findViewById(R.id.rv_details_types);
@@ -68,6 +69,7 @@ public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTa
         Glide.with(this).load(details.getImage()).into(image);
         name.setText(details.getName());
         weight.setText("Peso: " + details.getWeight());
+        height.setText("Altura: " + details.getHeight());
         experience.setText("Experiencia: "  + details.getBaseExperience());
         id.setText("ID: " + details.getId());
         types.setText("Tipo: ");
