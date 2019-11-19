@@ -10,6 +10,7 @@
 
     <ImageView
         android:id="@+id/typeImage"
+        android:background="#35363F"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="100dp"
