@@ -1,4 +1,4 @@
-package org.raquel.pokedex.entities;
+package org.raquel.pokedex.modelos;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;

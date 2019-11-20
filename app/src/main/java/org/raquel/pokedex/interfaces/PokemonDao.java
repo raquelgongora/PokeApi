@@ -5,7 +5,7 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import org.raquel.pokedex.entities.Pokemon;
+import org.raquel.pokedex.modelos.Pokemon;
 
 import java.util.List;
 

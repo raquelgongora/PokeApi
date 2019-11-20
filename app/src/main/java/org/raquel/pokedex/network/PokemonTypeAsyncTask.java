@@ -6,8 +6,8 @@ import android.util.Log;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.raquel.pokedex.entities.Pokemon;
-import org.raquel.pokedex.entities.PokemonType;
+import org.raquel.pokedex.modelos.Pokemon;
+import org.raquel.pokedex.modelos.PokemonType;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
 
 

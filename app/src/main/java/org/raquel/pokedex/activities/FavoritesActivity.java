@@ -10,8 +10,8 @@ import android.view.View;
 
 import org.raquel.pokedex.R;
 import org.raquel.pokedex.adapters.PokemonAdapter;
-import org.raquel.pokedex.database.AppDatabase;
-import org.raquel.pokedex.entities.Pokemon;
+import org.raquel.pokedex.baseDatos.AppDatabase;
+import org.raquel.pokedex.modelos.Pokemon;
 
 import java.util.List;
 

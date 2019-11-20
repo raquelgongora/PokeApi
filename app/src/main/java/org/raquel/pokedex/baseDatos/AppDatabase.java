@@ -1,4 +1,4 @@
-package org.raquel.pokedex.database;
+package org.raquel.pokedex.baseDatos;
 
 import android.content.Context;
 
@@ -6,7 +6,7 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import org.raquel.pokedex.entities.Pokemon;
+import org.raquel.pokedex.modelos.Pokemon;
 import org.raquel.pokedex.interfaces.PokemonDao;
 
 @Database(entities = {Pokemon.class}, version = 1, exportSchema = false)

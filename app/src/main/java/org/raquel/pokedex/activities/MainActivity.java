@@ -17,7 +17,7 @@ import com.github.ybq.android.spinkit.style.DoubleBounce;
 
 import org.raquel.pokedex.R;
 import org.raquel.pokedex.adapters.PokemonAdapter;
-import org.raquel.pokedex.entities.Pokemon;
+import org.raquel.pokedex.modelos.Pokemon;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
 import org.raquel.pokedex.network.PokemonAsyncTask;
 

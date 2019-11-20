@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#35363F"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#35363F"
     android:orientation="vertical"
     tools:context=".activities.PokemonTypeActivity">
 
@@ -17,7 +16,7 @@
         app:srcCompat="@android:color/background_light" />
 
     <TextView
-        android:id="@+id/type_name"
+        android:id="@+id/typeName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_bold"
@@ -26,13 +25,13 @@
         android:textSize="20sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/type_damage_relations"
+        android:id="@+id/typeDamageRelations"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/type_pokemons"
+        android:id="@+id/typePokemon"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

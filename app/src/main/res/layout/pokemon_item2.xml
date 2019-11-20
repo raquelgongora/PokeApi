@@ -16,7 +16,7 @@
         android:layout_width="280dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:background="@drawable/textview_border2"
+        android:background="@drawable/textview_border"
         android:foregroundGravity="center"
         android:gravity="center"
         android:orientation="horizontal"

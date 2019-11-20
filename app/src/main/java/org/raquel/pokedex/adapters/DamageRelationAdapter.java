@@ -12,7 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.raquel.pokedex.R;
-import org.raquel.pokedex.entities.PokemonType;
+import org.raquel.pokedex.modelos.PokemonType;
+//import static org.raquel.pokedex.utils.Utils.
 
 import java.util.List;
 
@@ -70,7 +71,11 @@ public class DamageRelationAdapter extends RecyclerView.Adapter<DamageRelationAd
 
 
 
+
+
         }
+
+
 
 
 

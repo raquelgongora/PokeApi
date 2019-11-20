@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 
 import org.raquel.pokedex.R;
-import org.raquel.pokedex.entities.Pokemon;
+import org.raquel.pokedex.modelos.Pokemon;
 
 import java.util.List;
 

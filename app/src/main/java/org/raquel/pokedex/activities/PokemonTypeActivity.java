@@ -14,12 +14,13 @@ import android.widget.TextView;
 import org.raquel.pokedex.R;
 import org.raquel.pokedex.adapters.DamageRelationAdapter;
 import org.raquel.pokedex.adapters.PokemonAdapter2;
-import org.raquel.pokedex.entities.Pokemon;
-import org.raquel.pokedex.entities.PokemonType;
+import org.raquel.pokedex.modelos.Pokemon;
+import org.raquel.pokedex.modelos.PokemonType;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
 import org.raquel.pokedex.network.PokemonTypeAsyncTask;
 
 import static org.raquel.pokedex.utils.Utils.getTypeImageResource;
+
 
 public class PokemonTypeActivity extends AppCompatActivity implements AsyncTaskHandler, PokemonAdapter2.ItemClickListener {
 
@@ -36,9 +37,9 @@ public class PokemonTypeActivity extends AppCompatActivity implements AsyncTaskH
 
         typeImage = findViewById(R.id.typeImage);
 
-        name = findViewById(R.id.type_name);
-        damageRelations = findViewById(R.id.type_damage_relations);
-        pokemons = findViewById(R.id.type_pokemons);
+        name = findViewById(R.id.typeName);
+        damageRelations = findViewById(R.id.typeDamageRelations);
+        pokemons = findViewById(R.id.typePokemon);
 
         String type = getIntent().getStringExtra("TYPE");
         String url = "https://pokeapi.co/api/v2/type/" + type;

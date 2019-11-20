@@ -17,9 +17,9 @@ import com.bumptech.glide.Glide;
 
 import org.raquel.pokedex.R;
 import org.raquel.pokedex.adapters.RowTypesAdapter;
-import org.raquel.pokedex.database.AppDatabase;
-import org.raquel.pokedex.entities.Pokemon;
-import org.raquel.pokedex.entities.PokemonDetails;
+import org.raquel.pokedex.baseDatos.AppDatabase;
+import org.raquel.pokedex.modelos.Pokemon;
+import org.raquel.pokedex.modelos.PokemonDetails;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
 import org.raquel.pokedex.network.PokemonDetailsAsyncTask;
 
@@ -45,15 +45,15 @@ public class PokemonDetailsActivity extends AppCompatActivity implements AsyncTa
 
 
 
-        image = findViewById(R.id.details_image);
-        favorite = findViewById(R.id.details_favorite);
-        name = findViewById(R.id.detatils_name);
-        types = findViewById(R.id.detatils_type);
-        weight = findViewById(R.id.detatils_weight);
-        height = findViewById(R.id.detatils_height);
-        experience = findViewById(R.id.detatils_experience);
-        id = findViewById(R.id.detatils_id);
-        rvDetailsTypes = findViewById(R.id.rv_details_types);
+        image = findViewById(R.id.pokemonImage);
+        favorite = findViewById(R.id.pokemonFavorite);
+        name = findViewById(R.id.pokemonName);
+        types = findViewById(R.id.pokemonType);
+        weight = findViewById(R.id.pokemonWeight);
+        height = findViewById(R.id.pokemonHeight);
+        experience = findViewById(R.id.pokemonExp);
+        id = findViewById(R.id.pokemonID);
+        rvDetailsTypes = findViewById(R.id.recyclerTypes);
 
         url = getIntent().getStringExtra("URL");
 
