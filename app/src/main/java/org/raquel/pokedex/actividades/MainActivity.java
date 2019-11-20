@@ -19,7 +19,7 @@ import org.raquel.pokedex.R;
 import org.raquel.pokedex.adaptadores.PokemonAdapter;
 import org.raquel.pokedex.modelos.Pokemon;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
-import org.raquel.pokedex.utils.PokemonAsyncTask;
+import org.raquel.pokedex.network.PokemonAsyncTask;
 
 import java.util.List;
 

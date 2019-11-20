@@ -17,7 +17,7 @@ import org.raquel.pokedex.adaptadores.PokemonAdapter2;
 import org.raquel.pokedex.modelos.Pokemon;
 import org.raquel.pokedex.modelos.PokemonType;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
-import org.raquel.pokedex.utils.PokemonTypeAsyncTask;
+import org.raquel.pokedex.network.PokemonTypeAsyncTask;
 
 import static org.raquel.pokedex.utils.Utils.getTypeImageResource;
 
@@ -37,7 +37,6 @@ public class PokemonTypeActivity extends AppCompatActivity implements AsyncTaskH
 
         typeImage = findViewById(R.id.typeImage);
 
-        name = findViewById(R.id.typeName);
         damageRelations = findViewById(R.id.typeDamageRelations);
         pokemons = findViewById(R.id.typePokemon);
 

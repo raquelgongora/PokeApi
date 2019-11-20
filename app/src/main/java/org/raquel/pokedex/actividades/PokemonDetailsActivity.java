@@ -21,7 +21,7 @@ import org.raquel.pokedex.baseDatos.AppDatabase;
 import org.raquel.pokedex.modelos.Pokemon;
 import org.raquel.pokedex.modelos.PokemonDetails;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
-import org.raquel.pokedex.utils.PokemonDetailsAsyncTask;
+import org.raquel.pokedex.network.PokemonDetailsAsyncTask;
 
 import java.util.Arrays;
 

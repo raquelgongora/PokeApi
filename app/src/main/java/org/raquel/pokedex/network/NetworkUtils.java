@@ -1,4 +1,4 @@
-package org.raquel.pokedex.utils;
+package org.raquel.pokedex.network;
 
 import android.util.Log;
 

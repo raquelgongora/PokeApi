@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#35363F"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".actividades.PokemonTypeActivity">
 
@@ -15,23 +16,17 @@
         android:minHeight="50dp"
         app:srcCompat="@android:color/background_light" />
 
-    <TextView
-        android:id="@+id/typeName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textSize="20sp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/typeDamageRelations"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/textview_border4" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/typePokemon"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
 </LinearLayout>

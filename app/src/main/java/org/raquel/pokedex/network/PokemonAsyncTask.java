@@ -1,4 +1,4 @@
-package org.raquel.pokedex.utils;
+package org.raquel.pokedex.network;
 
 import android.os.AsyncTask;
 import android.util.Log;
@@ -14,8 +14,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.raquel.pokedex.utils.NetworkUtils.createUrl;
-import static org.raquel.pokedex.utils.NetworkUtils.makeHttpRequest;
+import static org.raquel.pokedex.network.NetworkUtils.createUrl;
+import static org.raquel.pokedex.network.NetworkUtils.makeHttpRequest;
 
  public class PokemonAsyncTask extends AsyncTask<Void, Void, List<Pokemon>> {
 
