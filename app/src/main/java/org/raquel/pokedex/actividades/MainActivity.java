@@ -1,4 +1,4 @@
-package org.raquel.pokedex.activities;
+package org.raquel.pokedex.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -16,10 +16,10 @@ import com.github.ybq.android.spinkit.sprite.Sprite;
 import com.github.ybq.android.spinkit.style.DoubleBounce;
 
 import org.raquel.pokedex.R;
-import org.raquel.pokedex.adapters.PokemonAdapter;
+import org.raquel.pokedex.adaptadores.PokemonAdapter;
 import org.raquel.pokedex.modelos.Pokemon;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
-import org.raquel.pokedex.network.PokemonAsyncTask;
+import org.raquel.pokedex.utils.PokemonAsyncTask;
 
 import java.util.List;
 

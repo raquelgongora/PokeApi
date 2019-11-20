@@ -1,4 +1,4 @@
-package org.raquel.pokedex.adapters;
+package org.raquel.pokedex.adaptadores;
 
 import android.content.Context;
 import android.view.LayoutInflater;

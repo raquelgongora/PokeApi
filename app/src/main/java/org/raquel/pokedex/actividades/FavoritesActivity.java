@@ -1,4 +1,4 @@
-package org.raquel.pokedex.activities;
+package org.raquel.pokedex.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import org.raquel.pokedex.R;
-import org.raquel.pokedex.adapters.PokemonAdapter;
+import org.raquel.pokedex.adaptadores.PokemonAdapter;
 import org.raquel.pokedex.baseDatos.AppDatabase;
 import org.raquel.pokedex.modelos.Pokemon;
 

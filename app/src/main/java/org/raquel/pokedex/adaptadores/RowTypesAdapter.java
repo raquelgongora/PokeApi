@@ -1,4 +1,4 @@
-package org.raquel.pokedex.adapters;
+package org.raquel.pokedex.adaptadores;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 
 import org.raquel.pokedex.R;
-import org.raquel.pokedex.activities.PokemonTypeActivity;
+import org.raquel.pokedex.actividades.PokemonTypeActivity;
 import org.raquel.pokedex.utils.Utils;
 
 import java.util.List;
@@ -59,7 +59,7 @@ public class RowTypesAdapter extends RecyclerView.Adapter<RowTypesAdapter.ViewHo
 
         ViewHolder(View itemView) {
             super(itemView);
-            typeImage = itemView.findViewById(R.id.type_image);
+            typeImage = itemView.findViewById(R.id.typeImage);
             itemView.setOnClickListener(this);
         }
 

@@ -6,7 +6,7 @@
     android:id="@+id/row_types_layout">
 
     <ImageView
-        android:id="@+id/type_image"
+        android:id="@+id/typeImage"
         android:layout_width="30dp"
         android:layout_height="30dp"/>
 

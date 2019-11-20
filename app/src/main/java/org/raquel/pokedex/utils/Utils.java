@@ -49,6 +49,8 @@ public class Utils {
                 return R.drawable.water_tag;
             case "dark":
                 return R.drawable.dark_tag;
+            case "electric":
+                return R.drawable.electric_tag;
 
 
 

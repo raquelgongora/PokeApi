@@ -7,7 +7,7 @@
     android:background="#35363F"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".activities.PokemonDetailsActivity">
+    tools:context=".actividades.PokemonDetailsActivity">
 
     <TextView
         android:id="@+id/pokemonName"

@@ -1,4 +1,4 @@
-package org.raquel.pokedex.activities;
+package org.raquel.pokedex.actividades;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,12 +16,12 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import org.raquel.pokedex.R;
-import org.raquel.pokedex.adapters.RowTypesAdapter;
+import org.raquel.pokedex.adaptadores.RowTypesAdapter;
 import org.raquel.pokedex.baseDatos.AppDatabase;
 import org.raquel.pokedex.modelos.Pokemon;
 import org.raquel.pokedex.modelos.PokemonDetails;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
-import org.raquel.pokedex.network.PokemonDetailsAsyncTask;
+import org.raquel.pokedex.utils.PokemonDetailsAsyncTask;
 
 import java.util.Arrays;
 

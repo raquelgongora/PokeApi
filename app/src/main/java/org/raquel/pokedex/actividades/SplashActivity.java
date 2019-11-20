@@ -1,4 +1,4 @@
-package org.raquel.pokedex.activities;
+package org.raquel.pokedex.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 

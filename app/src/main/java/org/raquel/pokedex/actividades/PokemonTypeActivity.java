@@ -1,4 +1,4 @@
-package org.raquel.pokedex.activities;
+package org.raquel.pokedex.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -12,12 +12,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.raquel.pokedex.R;
-import org.raquel.pokedex.adapters.DamageRelationAdapter;
-import org.raquel.pokedex.adapters.PokemonAdapter2;
+import org.raquel.pokedex.adaptadores.DamageRelationAdapter;
+import org.raquel.pokedex.adaptadores.PokemonAdapter2;
 import org.raquel.pokedex.modelos.Pokemon;
 import org.raquel.pokedex.modelos.PokemonType;
 import org.raquel.pokedex.interfaces.AsyncTaskHandler;
-import org.raquel.pokedex.network.PokemonTypeAsyncTask;
+import org.raquel.pokedex.utils.PokemonTypeAsyncTask;
 
 import static org.raquel.pokedex.utils.Utils.getTypeImageResource;
 
