@@ -25,14 +25,14 @@
         tools:layout_editor_absoluteY="17dp">
 
         <ImageView
-            android:id="@+id/iv_pokemon_image"
+            android:id="@+id/pokemonImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="10dp" />
 
         <TextView
-            android:id="@+id/tv_pokemon_name"
+            android:id="@+id/pokemonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"

@@ -62,8 +62,8 @@ public class PokemonAdapter2 extends RecyclerView.Adapter<PokemonAdapter2.ViewHo
 
         ViewHolder(View itemView) {
             super(itemView);
-            pokemonName = itemView.findViewById(R.id.tv_pokemon_name);
-            pokemonImage = itemView.findViewById(R.id.iv_pokemon_image);
+            pokemonName = itemView.findViewById(R.id.pokemonName);
+            pokemonImage = itemView.findViewById(R.id.pokemonImage);
             itemView.setOnClickListener(this);
         }
 

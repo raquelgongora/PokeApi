@@ -9,6 +9,7 @@ public class PokemonType {
     private  Map<String, List<String>> damageRelations;
     private List<Pokemon> pokemons;
 
+
     public static String[] relationNames = {"double_damage_from", "double_damage_to", "half_damage_from",
             "half_damage_to", "no_damage_from", "no_damage_to"};
 
@@ -17,6 +18,9 @@ public class PokemonType {
         this.damageRelations = damageRelations;
         this.pokemons = pokemons;
     }
+
+
+
 
     public String getName() {
         return name;
@@ -32,4 +36,8 @@ public class PokemonType {
 
 
     }
+
+
+
+
 

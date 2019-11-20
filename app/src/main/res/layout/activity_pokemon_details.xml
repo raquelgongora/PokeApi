@@ -1,23 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.PokemonDetailsActivity"
-    android:orientation="vertical"
     android:background="#35363F"
-    android:gravity="center">
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.PokemonDetailsActivity">
 
-    <ImageView
-        android:id="@+id/details_image"
-        android:layout_width="200dp"
-        android:layout_height="200dp"/>
     <TextView
         android:id="@+id/detatils_name"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/detatils_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/details_favorite"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#00FFFFFF"
+            android:onClick="onClickFavorite"
+            android:src="@drawable/favorite_empty" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/details_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -25,35 +55,56 @@
         <TextView
             android:id="@+id/detatils_type"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_details_types"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"/>
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/detailsWeight"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_details_types"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="40dp" />
 
-    <TextView
-        android:id="@+id/detatils_height"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="10dp">
 
-    <TextView
-        android:id="@+id/detatils_experience"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/detatils_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <ImageView
-        android:id="@+id/details_favorite"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:src="@drawable/favorite_empty"
-        android:onClick="onClickFavorite"/>
+
+        <TextView
+            android:id="@+id/detatils_weight"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/detatils_height"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/detatils_experience"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
 </LinearLayout>

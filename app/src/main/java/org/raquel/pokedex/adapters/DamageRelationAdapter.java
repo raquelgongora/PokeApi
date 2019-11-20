@@ -4,18 +4,15 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
+
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-
 import org.raquel.pokedex.R;
 import org.raquel.pokedex.entities.PokemonType;
-import org.raquel.pokedex.utils.Utils;
 
 import java.util.List;
 
@@ -68,8 +65,15 @@ public class DamageRelationAdapter extends RecyclerView.Adapter<DamageRelationAd
             super(itemView);
             relation = itemView.findViewById(R.id.relation);
            // damageFrom = itemView.findViewById(R.id.damage_from);
-            rvTypes = itemView.findViewById(R.id.rv_types);
+            rvTypes = itemView.findViewById(R.id.recyclerTypes);
+
+
+
+
         }
+
+
+
 
 
 
