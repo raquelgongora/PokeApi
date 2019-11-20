@@ -9,6 +9,7 @@
     tools:context=".actividades.MainActivity">
 
 
+
     <TextView
         android:id="@+id/Pokedex"
         android:layout_width="wrap_content"
